@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for helping the community</p>
+        <hr>
+        <form id="survey-form">
+            <label for="name-label" id="name-label" >Enter your name: </label><input id="name" type="text" placeholder="John Doe"
+                    required>
+            <label for="email-label" id="email-label">Enter your email: </label><input id="email" type="email" 
+                    placeholder="johndoe@gmail.com" required>
+            <label for="number-label" id="number-label">Enter your age (optional): </label><input id="number" type="number"
+                    min="13" max="120" placeholder="18">
+            <label>How did you hear about us?
+                <select id="dropdown">
+                    <option>(Select one)</option>
+                    <option>Social Media</option>
+                    <option>Friend</option>
+                    <option>Website Ads</option>
+                    <option>Events</option>
+                </select>
+            </label>
+            <label>How was your experience with your donation drive?</label>
+            <label><input type="radio" name="satisfaction" value="1" class="inline" id="buttons" checked>Very Good</label>
+            <label><input type="radio" name="satisfaction" value="2" class="inline" id="buttons">Good</label>
+            <label><input type="radio" name="satisfaction" value="3" class="inline" id="buttons">Bad</label>
+            <label><input type="radio" name="satisfaction" value="4" class="inline" id="buttons">Very Bad</label>
+            <label>What are the other events that you are looking forward to?</label>
+            <label><input type="checkbox" value="5" class="inline" id="buttons">School Supply Drive</label>
+            <label><input type="checkbox" value="6" class="inline" id="buttons">Toy Drive</label>
+            <label><input type="checkbox" value="7" class="inline" id="buttons">Blood Drive</label>
+            <label><input type="checkbox" value="8" class="inline" id="buttons">Book Drive</label>
+            <label><input type="checkbox" value="9" class="inline" id="buttons">Clothing Drive</label>
+            <label>Do you have any suggestions for future events? Tell us!</label>
+            <textarea placeholder="Type here..." rows="4" cols="30"></textarea>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
